@@ -45,6 +45,10 @@
             this.multiply = new System.Windows.Forms.Button();
             this.Result = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
+            this.punt = new System.Windows.Forms.Button();
+            this.sqrt = new System.Windows.Forms.Button();
+            this.Result_single = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -160,7 +164,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(230, 64);
+            this.textBox1.Location = new System.Drawing.Point(230, 60);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(153, 44);
@@ -168,8 +172,8 @@
             // 
             // divide
             // 
-            this.divide.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.divide.Location = new System.Drawing.Point(422, 114);
+            this.divide.BackColor = System.Drawing.Color.LightCoral;
+            this.divide.Location = new System.Drawing.Point(389, 114);
             this.divide.Name = "divide";
             this.divide.Size = new System.Drawing.Size(47, 48);
             this.divide.TabIndex = 11;
@@ -179,8 +183,8 @@
             // 
             // min
             // 
-            this.min.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.min.Location = new System.Drawing.Point(422, 222);
+            this.min.BackColor = System.Drawing.Color.LightCoral;
+            this.min.Location = new System.Drawing.Point(389, 168);
             this.min.Name = "min";
             this.min.Size = new System.Drawing.Size(47, 48);
             this.min.TabIndex = 12;
@@ -190,8 +194,8 @@
             // 
             // plus
             // 
-            this.plus.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.plus.Location = new System.Drawing.Point(422, 276);
+            this.plus.BackColor = System.Drawing.Color.LightCoral;
+            this.plus.Location = new System.Drawing.Point(442, 168);
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(47, 48);
             this.plus.TabIndex = 13;
@@ -201,8 +205,8 @@
             // 
             // multiply
             // 
-            this.multiply.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.multiply.Location = new System.Drawing.Point(422, 168);
+            this.multiply.BackColor = System.Drawing.Color.LightCoral;
+            this.multiply.Location = new System.Drawing.Point(442, 114);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(47, 48);
             this.multiply.TabIndex = 14;
@@ -212,8 +216,8 @@
             // 
             // Result
             // 
-            this.Result.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.Result.Location = new System.Drawing.Point(336, 276);
+            this.Result.BackColor = System.Drawing.Color.LightCoral;
+            this.Result.Location = new System.Drawing.Point(389, 276);
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(47, 48);
             this.Result.TabIndex = 18;
@@ -223,7 +227,7 @@
             // 
             // Clear
             // 
-            this.Clear.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Clear.BackColor = System.Drawing.Color.LightCoral;
             this.Clear.Location = new System.Drawing.Point(230, 276);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(47, 48);
@@ -232,11 +236,58 @@
             this.Clear.UseVisualStyleBackColor = false;
             this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
+            // punt
+            // 
+            this.punt.BackColor = System.Drawing.Color.LightCoral;
+            this.punt.Location = new System.Drawing.Point(336, 276);
+            this.punt.Name = "punt";
+            this.punt.Size = new System.Drawing.Size(47, 48);
+            this.punt.TabIndex = 20;
+            this.punt.Text = ",";
+            this.punt.UseVisualStyleBackColor = false;
+            // 
+            // sqrt
+            // 
+            this.sqrt.BackColor = System.Drawing.Color.LightCoral;
+            this.sqrt.Location = new System.Drawing.Point(496, 222);
+            this.sqrt.Name = "sqrt";
+            this.sqrt.Size = new System.Drawing.Size(47, 48);
+            this.sqrt.TabIndex = 21;
+            this.sqrt.Text = "√";
+            this.sqrt.UseVisualStyleBackColor = false;
+            this.sqrt.Click += new System.EventHandler(this.plus_Click);
+            // 
+            // Result_single
+            // 
+            this.Result_single.BackColor = System.Drawing.Color.LightCoral;
+            this.Result_single.Location = new System.Drawing.Point(496, 276);
+            this.Result_single.Name = "Result_single";
+            this.Result_single.Size = new System.Drawing.Size(47, 48);
+            this.Result_single.TabIndex = 22;
+            this.Result_single.Text = "=";
+            this.Result_single.UseVisualStyleBackColor = false;
+            this.Result_single.Click += new System.EventHandler(this.Result_single_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.LightCoral;
+            this.button11.Location = new System.Drawing.Point(389, 222);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(47, 48);
+            this.button11.TabIndex = 23;
+            this.button11.Text = "^";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.plus_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 450);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.Result_single);
+            this.Controls.Add(this.sqrt);
+            this.Controls.Add(this.punt);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Result);
             this.Controls.Add(this.multiply);
@@ -280,6 +331,10 @@
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button Result;
         private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.Button punt;
+        private System.Windows.Forms.Button sqrt;
+        private System.Windows.Forms.Button Result_single;
+        private System.Windows.Forms.Button button11;
     }
 }
 

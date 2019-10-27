@@ -8,6 +8,6 @@ namespace Calculator.Operators
 {
     public abstract class Operator
     {
-        public abstract int Berekenen(int invoer1, int invoer2);
+        public abstract double Berekenen(double invoer1, double invoer2); // de basis regel, abstract dus kan niet geinstantieerd worden. Elke afgeleide moet 2 invoers hebben. 
     }
 }

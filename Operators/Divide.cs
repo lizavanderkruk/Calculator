@@ -8,7 +8,7 @@ namespace Calculator.Operators
 {
     public class Divide : Operator
     {
-        public override int Berekenen(int invoer1, int invoer2)
+        public override double Berekenen(double invoer1, double invoer2)
         {
             return invoer1 / invoer2;
         }

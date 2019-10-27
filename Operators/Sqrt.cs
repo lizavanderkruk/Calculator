@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operators
 {
-    public class Sum : Operator
-    {
-        public override double Berekenen(double invoer1, double invoer2)
+    class Sqrt : OperatorSingle
+    {        
+        public override double Berekenen(double invoer1)
         {
-            return invoer1 + invoer2;
+            return Math.Sqrt(invoer1);
         }
     }
 }

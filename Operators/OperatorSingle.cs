@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operators
 {
-    public class Sum : Operator
+    public abstract class OperatorSingle
     {
-        public override double Berekenen(double invoer1, double invoer2)
-        {
-            return invoer1 + invoer2;
-        }
+        public abstract double Berekenen(double invoer1);
     }
 }

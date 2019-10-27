@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operators
 {
-    public class Min : Operator
+    public class Min : Operator // afgeleide van de basis class Operator
     {
-        public override int Berekenen(int invoer1, int invoer2)
+        public override double Berekenen(double invoer1, double invoer2) //de basis methode wordt ge-override, zodat er een berekening in kan. 
         {
             return invoer1 - invoer2;
         }

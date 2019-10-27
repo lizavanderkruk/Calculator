@@ -57,6 +57,9 @@
     <Compile Include="Operators\Min.cs" />
     <Compile Include="Operators\Multiply.cs" />
     <Compile Include="Operators\Operator.cs" />
+    <Compile Include="Operators\OperatorSingle.cs" />
+    <Compile Include="Operators\Power.cs" />
+    <Compile Include="Operators\Sqrt.cs" />
     <Compile Include="Operators\Sum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
